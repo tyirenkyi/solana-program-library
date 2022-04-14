@@ -23,7 +23,7 @@ export * from './initializeMultisig2'; // 19
 export * from './initializeMint2'; //     20
 export * from './initializeMintCloseAuthority'; // 23
 export * from './createNativeMint'; //    29
-
+export * from './reallocate';
 export * from './decode';
 
 export * from './associatedTokenAccount';
