@@ -62,8 +62,7 @@ export function createReallocateInstruction(
     },
     data
   )
-
-  console.log(data.readUInt8());
+  
   return new TransactionInstruction({ keys, programId, data });
 }
 

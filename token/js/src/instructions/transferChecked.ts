@@ -69,8 +69,6 @@ export function createTransferCheckedInstruction(
         data
     );
 
-    console.log(data.readUInt8());
-
     return new TransactionInstruction({ keys, programId, data });
 }
 

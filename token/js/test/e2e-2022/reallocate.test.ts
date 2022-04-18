@@ -62,7 +62,7 @@ describe('reallocate', () => {
     const EXTENSIONS = [ExtensionType.MintCloseAuthority, ExtensionType.ConfidentialTransferMint];
     account = await createAccount(connection, payer, mint, owner, undefined, undefined, TEST_PROGRAM_ID);
     const transaction = new Transaction().add(
-      createReallocateInstruction(account, payer.publicKey, owner, [], EXTENSIONS)
+      createReallocateInstruction(account, payer.publicKey, owner, [], EXTENSIONS, TEST_PROGRAM_ID)
     );
     await sendAndConfirmTransaction(connection, transaction, [payer], undefined);
     const mintLen = getMintLen(EXTENSIONS);
